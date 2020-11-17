@@ -1,4 +1,4 @@
-#!/bin/bash
+alias reload!='. ~/.bashrc'
 
 alias clr='clear'
 alias cls='clear'
@@ -7,12 +7,14 @@ alias ..='cd ..'
 alias ...='cd ../..'
 alias ....='cd ../../..'
 alias .....='cd ../../../..'
+alias ......='cd ../../../../..'
 alias ~='cd ~'
 alias -- -='cd -'
 
 alias ls='ls -a $LS_OPTIONS'
 alias ll='ls -lah $LS_OPTIONS'
 alias ll='exa -lahF --git --color-scale $LS_OPTIONS'
+alias grep='grep --color=auto'
 
 alias rm='rm -iv'
 alias cp='cp -iv'
@@ -20,6 +22,14 @@ alias mv='mv -iv'
 
 alias mkdir='mkdir -pv'
 alias rmdir='rm -r'
+
+alias df='df -h'
+alias du='du -h -c'
+
+cd() {
+  builtin cd "$@" && ls -F
+}
+
 
 alias top='htop'
 alias vi='vim'
