@@ -1,13 +1,8 @@
 #!/bin/bash
-set -x
 
 sudo apt-get update
-# sudo apt-get upgrade -y
-sudo apt-get install -y exa screen virt-what unzip neofetch git curl wget htop thefuck
-
-if ! dpkg-query -W -f='${Status}' exa  | grep "ok installed"; then sudo cp ~/dotfiles/exa-linux-x86_64 /usr/local/bin/exa; fi
-
-cd ~/
+sudo apt-get install -y git curl wget htop unzip screen neofetch virt-what
+sudo cp ~/dotfiles/bin/exa-linux-x86_64 /usr/local/bin/exa
 
 echo '
 . ~/dotfiles/.profile' >> ~/.profile

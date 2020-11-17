@@ -11,8 +11,7 @@ alias ......='cd ../../../../..'
 alias ~='cd ~'
 alias -- -='cd -'
 
-alias ls='ls -a $LS_OPTIONS'
-alias ll='ls -lah $LS_OPTIONS'
+alias ls='exa -aF $LS_OPTIONS'
 alias ll='exa -lahF --git --color-scale $LS_OPTIONS'
 alias grep='grep --color=auto'
 
@@ -27,7 +26,7 @@ alias df='df -h'
 alias du='du -h -c'
 
 cd() {
-  builtin cd "$@" && ls
+  builtin cd "$@" && exa
 }
 
 
