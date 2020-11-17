@@ -27,7 +27,7 @@ alias df='df -h'
 alias du='du -h -c'
 
 cd() {
-  builtin cd "$@" && ls -F
+  builtin cd "$@" && ls
 }
 
 
