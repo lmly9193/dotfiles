@@ -11,6 +11,10 @@ alias ......='cd ../../../../..'
 alias ~='cd ~'
 alias -- -='cd -'
 
+cd() {
+  builtin cd "$@" && ls
+}
+
 alias ls='exa -aF $LS_OPTIONS'
 alias ll='exa -lahF --git --color-scale $LS_OPTIONS'
 alias grep='grep --color=auto'
@@ -24,11 +28,6 @@ alias rmdir='rm -r'
 
 alias df='df -h'
 alias du='du -h -c'
-
-cd() {
-  builtin cd "$@" && exa
-}
-
 
 alias top='htop'
 alias vi='vim'
