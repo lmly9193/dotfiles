@@ -8,7 +8,7 @@ sudo apt-get install -y exa screen virt-what unzip neofetch git curl wget htop t
 cd ~/
 
 echo '
-. ~/dotfiles/.profile' >> ~/.profile.
+. ~/dotfiles/.profile' >> ~/.profile
 
 echo '
 . ~/dotfiles/.aliases' >> ~/.bashrc
