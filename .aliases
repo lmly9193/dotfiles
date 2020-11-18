@@ -11,10 +11,6 @@ alias ......='cd ../../../../..'
 alias ~='cd ~'
 alias -- -='cd -'
 
-cd() {
-  builtin cd "$@" && ls
-}
-
 alias ls='exa -aF $LS_OPTIONS'
 alias ll='exa -lahF --git --color-scale $LS_OPTIONS'
 alias grep='grep --color=auto'
@@ -33,3 +29,4 @@ alias top='htop'
 alias vi='vim'
 alias myip='curl https://ipinfo.io/ip'
 alias myinfo='curl https://ipinfo.io/json'
+alias bench='curl -Lso- bench.sh | bash'
