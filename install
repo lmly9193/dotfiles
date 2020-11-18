@@ -10,5 +10,9 @@ source ~/dotfiles/.exports' >> ~/.profile
 echo '
 source ~/dotfiles/.aliases' >> ~/.bashrc
 
+echo '
+source ~/dotfiles/.functions' >> ~/.bashrc
+
 source ~/dotfiles/.profile
 source ~/dotfiles/.aliases
+source ~/dotfiles/.functions
